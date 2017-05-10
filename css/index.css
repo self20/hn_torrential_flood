@@ -1,0 +1,30 @@
+/* public.css start */
+html {height: 100%;}
+body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft YaHei","微软雅黑","黑体",Helvetica,Arial,Tahoma; color: #333;}
+
+.icon ,.icon22 {display: inline-block;vertical-align: middle;overflow: hidden;background: url(../imgs/icon.png) no-repeat;}
+
+.icon22 {width: 22px;height: 22px;}
+.icon22.white_menu {background-position: -23px 0;}
+.icon22.white_computer {background-position: -46px 0;}
+.icon22.white_warn {background-position: -69px 0;}
+.icon22.white_map {background-position: -92px 0;}
+.icon22.white_notice {background-position: -115px 0;}
+.icon22.white_disaster {background-position: -138px 0;}
+.icon22.white_chart {background-position: -163px 0;}
+.m_container {position: relative; padding-top:50px;height: 100%;width: 100%;overflow: hidden;}
+.m_aside_box {position: absolute;left: 0;top:50px; height: 100%;}
+.m_aside_nav {position: absolute; width: 200px; height: 100%;left: 0;top:0;background-color:#262d35;}
+.m_main {margin-left: 200px;height: 100%;}
+.m_header {position: absolute; left: 0;top:0;width: 100%;height: 50px; -webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;box-sizing: content-box; background-color:#509edc;}
+.m_logo_box {padding:8px 0 8px 15px;height: 34px;}
+.m_logo_con {display: block;width: 340px;height: 34px;text-indent: -9999px;overflow: hidden;background:url(../imgs/logo1.png) no-repeat;}
+.m_nav_list .m_nav_header {padding:10px 0;height: 22px;text-align: center; background-color:#394555; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.m_nav_list li {font-size: 14px;}
+.m_nav_list h3 {position: relative;height: 48px;}
+.m_nav_list h3 a{display: block;  padding-left: 74px; height: 48px;line-height: 48px;border-left:4px solid transparent;color: #fff;}
+.m_nav_list h3 span {display: inline-block;line-height: 48px;}
+.m_nav_list h3 i {position: absolute;left: 28px;top: 14px;}
+
+/* public.css end */
