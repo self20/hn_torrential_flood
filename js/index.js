@@ -1,6 +1,7 @@
 $(function(){
     
-	resetPageHeight();
+	/*resetPageHeight();*/
+
 	//下拉框
 
 	$(".select_box").click(function(event){  
@@ -67,17 +68,21 @@ $(function(){
 
 	//左则菜单
 
-	$(".m_aside_nav_item:not(.open) h3").click(function(){
+	$(".m_nav_header .white_menu").click(function(){
 
-		if($(this).parent().hasClass("hover")){
+		if ($(this).parents(".m_aside_nav").hasClass("direction")){
 
-			$(this).parent().removeClass("hover");
+			$(this).parents(".m_aside_nav").removeClass("direction");
+			$(this).parents(".m_aside_nav").animate({"width":"200px"},200);
+			$(".m_main").stop().animate({"margin-left":"200px"},200);
 
 		}else{
 
-			$(this).parent().addClass("hover");
-			$(this).parent().siblings().removeClass("hover");
-		}
+			$(this).parents(".m_aside_nav").addClass("direction");
+			$(this).parents(".m_aside_nav").animate({"width":"50px"},200);
+			$(".m_main").stop().animate({"margin-left":"50px"},200);
+		};
+		
 	});
 
 
@@ -104,59 +109,11 @@ $(function(){
 		$(this).css("cursor","default");
 	});
 	
-  	
 
-  	// 图例 展开 收缩
-
-  	$(".m_legend_hd a").click(function(){
-
-  		if($(this).parents(".m_legend_box").hasClass("open")){
-
-  			$(this).parents(".m_legend_box").removeClass("open");
-
-  		}else{
-
-  			$(this).parents(".m_legend_box").addClass("open")
-  		}
-
-  	});
-
-  	//时间筛选
-
-  	$('.m_search_time dd:eq(0) .select_option a').click(function(){
-
-  		var _this = $(this);
-  		var _index = $(this).index();
-  		
-  		switch(_index){
-
-  			case 0:
-
-  			_this.parents(".m_search_box").next().find(".m_select_tab .m_select_con").addClass("hidden");
-  			_this.parents(".m_search_box").next().find(".m_select_tab .m_select_con:eq(0)").removeClass("hidden");
-  			break;
-
-  			case 1:
-
-  			_this.parents(".m_search_box").next().find(".m_select_tab .m_select_con").addClass("hidden");
-  			_this.parents(".m_search_box").next().find(".m_select_tab .m_select_con:eq(1)").removeClass("hidden");
-  			break;
-
-  			case 2:
-
-  			_this.parents(".m_search_box").next().find(".m_select_tab .m_select_con").addClass("hidden");
-  			_this.parents(".m_search_box").next().find(".m_select_tab .m_select_con:eq(2)").removeClass("hidden");
-  			break;
-
-  			case 3:
-
-  			_this.parents(".m_search_box").next().find(".m_select_tab .m_select_con").addClass("hidden");
-  			_this.parents(".m_search_box").next().find(".m_select_tab .m_select_con:eq(3)").removeClass("hidden");
-  			break;
-
-  		}
-  	})
 });
+
+
+//
 
 
 //重置页面高度

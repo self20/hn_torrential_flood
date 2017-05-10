@@ -5,7 +5,7 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .icon ,.icon22 {display: inline-block;vertical-align: middle;overflow: hidden;background: url(../imgs/icon.png) no-repeat;}
 
 .icon22 {width: 22px;height: 22px;}
-.icon22.white_menu {background-position: -23px 0;}
+.icon22.white_menu {background-position:0 -23px;}
 .icon22.white_computer {background-position: -46px 0;}
 .icon22.white_warn {background-position: -69px 0;}
 .icon22.white_map {background-position: -92px 0;}
@@ -14,17 +14,27 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .icon22.white_chart {background-position: -163px 0;}
 .m_container {position: relative; padding-top:50px;height: 100%;width: 100%;overflow: hidden;}
 .m_aside_box {position: absolute;left: 0;top:50px; height: 100%;}
-.m_aside_nav {position: absolute; width: 200px; height: 100%;left: 0;top:0;background-color:#262d35;}
-.m_main {margin-left: 200px;height: 100%;}
-.m_header {position: absolute; left: 0;top:0;width: 100%;height: 50px; -webkit-box-sizing: content-box;
--moz-box-sizing: content-box;box-sizing: content-box; background-color:#509edc;}
-.m_logo_box {padding:8px 0 8px 15px;height: 34px;}
+.m_aside_nav {position: absolute; width: 200px; height: 100%;left: 0;top:0;background-color:#262d35;/* -moz-transition: width 0.2s ease-in; -o-transition: width 0.2s ease-in; -ms-transition: width 0.2s ease-in; -webkit-transition: width 0.2s ease-in; */}
+.m_aside_nav .icon22.white_menu {background-position:0 -23px;}
+.m_main {position: relative; margin-left: 200px;height: 100%;}
+.m_header {position: absolute; left: 0;top:0;width: 100%;height: 50px; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box; background-color:#509edc;box-shadow: 0 2px 8px rgba(0,0,0,.3);z-index: 999;}
+.m_logo_box {padding:8px 0 8px 15px;height: 34px; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
 .m_logo_con {display: block;width: 340px;height: 34px;text-indent: -9999px;overflow: hidden;background:url(../imgs/logo1.png) no-repeat;}
 .m_nav_list .m_nav_header {padding:10px 0;height: 22px;text-align: center; background-color:#394555; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
 .m_nav_list li {font-size: 14px;}
 .m_nav_list h3 {position: relative;height: 48px;}
-.m_nav_list h3 a{display: block;  padding-left: 74px; height: 48px;line-height: 48px;border-left:4px solid transparent;color: #fff;}
+.m_nav_list h3 a{display: block;padding-left: 74px; height: 48px;line-height: 48px;color: #fff;border-left:4px solid transparent;text-align: left;}
+.m_nav_list h3 a:hover ,.active h3 a {background-color:#2d3f50;border-color:#509edc;}
 .m_nav_list h3 span {display: inline-block;line-height: 48px;}
-.m_nav_list h3 i {position: absolute;left: 28px;top: 14px;}
+.m_nav_list h3 i {position: absolute;left: 28px;top: 14px;-moz-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in;}
 
+.m_aside_nav.direction .white_menu {background-position:-23px 0;}
+.m_aside_nav.direction h3 span {display: none;}
+.m_aside_nav.direction h3 a {padding-left: 0;border:0;text-align: center;}
+.m_aside_nav.direction h3 a:hover ,.direction .active h3 a{background-color:#509edc;}
+.m_aside_nav.direction h3 i {position: absolute;left: 14px;top: 14px;}
+
+.m_function_box {position: absolute;left: 0;top:0;width: 270px;height: 100%;background:#fff;-webkit-box-shadow: 2px 0 8px rgba(0,0,0,.2);
+-moz-box-shadow: 2px 0 8px rgba(0,0,0,.2);
+box-shadow: 2px 0 8px rgba(0,0,0,.2);}
 /* public.css end */
