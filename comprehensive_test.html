@@ -28,7 +28,7 @@
                     <li class="m_nav_header">
                         <a class="icon22 white_menu" href="javascript:;"></a>
                     </li>
-                    <li class="m_nav_item">
+                    <li class="m_nav_item active">
                         <h3>
                             <a href="javascript:;">
                                 <i class="icon22 white_computer"></i>
@@ -82,15 +82,162 @@
         
         <div class="m_main">
            <div class="m_function_box ">
-               
+               <div class="m_fun_con">
+                   <div class="m_fun_hd">
+                       <h4>数据展示</h4>
+                   </div>
+                   <div class="m_fun_bd">
+                       <div class="m_fun_detail">
+                           <div class="m_detail_title">
+                               <h4>图层选择：</h4>
+                           </div>
+                           <div class="m_detail_b">
+                               <ul class="ct_select_list clear">
+                                   <li class="checked">
+                                       <a href="javascript:;" class="icon22 black_checkbox"></a>
+                                       <span>卫星</span>
+                                   </li>
+                                   <li>
+                                       <a href="javascript:;" class="icon22 black_checkbox"></a>
+                                       <span>雷达</span>
+                                   </li>
+                                   <li>
+                                       <a href="javascript:;" class="icon22 black_checkbox"></a>
+                                       <span>降水</span>
+                                   </li>
+                                   <li>
+                                       <a href="javascript:;" class="icon22 black_checkbox"></a>
+                                       <span>水文监测</span>
+                                   </li>
+                                   <li class="">
+                                       <a href="javascript:;" class="icon22 black_checkbox"></a>
+                                       <span>土壤水分监测</span>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
            </div>
            <div class="m_map_box">
-               
+              
+　　
+　　
            </div>
         </div>
 
     </div>
+    <!-- dialog -->
     
-    
+    <!-- 降水弹出框 -->
+    <div class="dialog" >
+        <div class="dialog_main ct_rainfall_main">
+            <div class="dialog_hd">
+                <h3>降水图层</h3>
+                <a href="javascript:;" class="icon closed">关闭</a>
+            </div>
+            <div class="dialog_bd">
+                <div class="dialog_bd_content">
+                    <dl class="ct_show_type">
+                        <dt>显示方式：</dt>
+                        <dd class="clear">
+                            <a class="checked" href="javascript:;">点位图</a>
+                            <a href="javascript:;">色斑叠加点位图</a>
+                            <a href="javascript:;">色斑图</a>
+                        </dd>
+                    </dl>
+                    <dl class="ct_show_type">
+                        <dt>数据选择：</dt>
+                        <dd class="clear">
+                            <a href="javascript:;">国家站</a>
+                            <a href="javascript:;">加密站</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="dialog_ft">
+                <a href="javascript:;" class="m_btn m_btn_cancel mr20">取消</a>
+                <a href="javascript:;" class="m_btn m_btn_confirm">确认</a>
+            </div>
+        </div>
+    </div>
+    <!-- 图片导出弹出框 -->
+    <div class="dialog" >
+        <div class="dialog_main ct_export_main ">
+            <div class="dialog_hd">
+                <h3>图片导出</h3>
+                <a href="javascript:;" class="icon closed">关闭</a>
+            </div>
+            <div class="dialog_bd">
+                <div class="dialog_bd_content">
+                    <dl class="ct_dialog_item clear">
+                        <dt>导出图层：</dt>
+                        <dd>
+                            <p>卫星IR1</p>
+                        </dd>
+                    </dl>
+                    <dl class="ct_dialog_item clear">
+                        <dt>导出时间：</dt>
+                        <dd>
+                            <p>2017-2-16 18:00</p>
+                        </dd>
+                    </dl>
+                    <dl class="ct_dialog_item clear">
+                        <dt>导出路径：</dt>
+                        <dd>
+                            <input type="text" class="text">
+                        </dd>
+                    </dl>
+                    <dl class="ct_dialog_item clear">
+                        <dt>导出格式：</dt>
+                        <dd class="m_select_box ">
+                            <div class="select_box">
+                                <input type="hidden" class="select_value" value="PNG">
+                                <span class="select_text">PNG</span>
+                                <a href="javascript:;" class="select_open icon"></a>
+                                <div class="select_option">
+                                    <a href="javascript:;" class="selected">PNG</a>
+                                    <a href="javascript:;">JPEG</a>
+                                    <a href="javascript:;">GIF</a>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="dialog_ft">
+                <a href="javascript:;" class="m_btn m_btn_cancel mr20">取消</a>
+                <a href="javascript:;" class="m_btn m_btn_confirm">确定</a>
+            </div>
+        </div>
+    </div>
+    <!-- 卫星图层 弹出框 -->
+    <div class="dialog" >
+        <div class="dialog_main ct_satellite_main">
+            <div class="dialog_hd">
+                <h3>卫星图层</h3>
+                <a href="javascript:;" class="icon closed">关闭</a>
+            </div>
+            <div class="dialog_bd">
+                <div class="dialog_bd_content">
+                    <dl class="ct_sl_select">
+                        <dt>通道选择：</dt>
+                        <dd class="clear">
+                            <a href="javascript:;">IR1</a>
+                            <a href="javascript:;">IR2</a>
+                            <a href="javascript:;">IR3</a>
+                            <a href="javascript:;">IR4</a>
+                            <a href="javascript:;">VIS</a>
+                            <a href="javascript:;">温度</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="dialog_ft">
+                <a href="javascript:;" class="m_btn m_btn_cancel mr20">取消</a>
+                <a href="javascript:;" class="m_btn m_btn_confirm">确定</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
