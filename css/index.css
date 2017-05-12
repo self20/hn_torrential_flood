@@ -18,7 +18,11 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .m_aside_nav {position: absolute; width: 200px; height: 100%;left: 0;top:0;background-color:#262d35;/* -moz-transition: width 0.2s ease-in; -o-transition: width 0.2s ease-in; -ms-transition: width 0.2s ease-in; -webkit-transition: width 0.2s ease-in; */}
 .m_aside_nav .icon22.white_menu {background-position:0 -23px;}
 .m_main {position: relative; margin-left: 200px;height: 100%;}
-.m_header {position: absolute; left: 0;top:0;width: 100%;height: 50px; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box; background-color:#509edc;box-shadow: 0 2px 8px rgba(0,0,0,.3);z-index: 999;}
+.m_header {position: absolute; left: 0;top:0;width: 100%;height: 50px;color:#fff; background-color:#509edc;box-shadow: 0 2px 8px rgba(0,0,0,.3);z-index: 999; font-size: 12px; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box; }
+.m_header_r {padding:15px 20px;}
+.m_user_box ,.m_date_box {float: left;height: 20px;line-height: 20px;}
+.m_date_box {padding-left: 20px; border-left:1px solid #7fb8e5;}
+.m_user_box {padding-right: 30px;}
 .m_logo_box {padding:8px 0 8px 15px;height: 34px; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
 .m_logo_con {display: block;width: 340px;height: 34px;text-indent: -9999px;overflow: hidden;background:url(../imgs/logo1.png) no-repeat;}
 .m_nav_list .m_nav_header {padding:10px 0;height: 22px;text-align: center; background-color:#394555; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
@@ -42,6 +46,8 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .m_fun_detail {border:1px solid #c5cad2;}
 .m_detail_title {height: 34px; line-height: 34px; border-bottom:1px solid #c5cad2;background-color:#eaecf0;font-size: 12px;}
 .m_detail_title h4 {line-height: 34px;text-indent: 12px;}
+.m_fun_ctr {position: absolute;left: 100%;top: 50%;margin-top: -27px; width: 16px;height: 53px;}
+.m_fun_btn {width: 16px;height: 53px;background-position: -184px 0;}
 
 .m_btn {display: inline-block;width: 60px; height: 32px;line-height: 32px; border:1px solid #e7eff3; font-size:14px;text-align: center;color: #666;background-color:#f0f2f7;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; -webkit-box-sizing: content-box;
 -moz-box-sizing: content-box;box-sizing: content-box; vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;}
