@@ -1,7 +1,7 @@
 /* public.css start */
 html {height: 100%;}
 body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft YaHei","微软雅黑","黑体",Helvetica,Arial,Tahoma; color: #333;}
-
+input.text {-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
 .icon ,.icon22 {display: inline-block;vertical-align: middle;overflow: hidden;background: url(../imgs/icon.png) no-repeat;}
 
 .icon22 {width: 22px;height: 22px;}
@@ -16,6 +16,9 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .icon22.black_radio {background-position: -138px -23px;}
 .icon22.black_down {background-position: -161px -23px;}
 .icon22.black_up {background-position: 0 -46px;}
+.icon22.blue_square {background-position: -46px -46px;}
+.icon22.blue_circle {background-position: -23px -46px;}
+.icon22.blue_pencil {background-position: -69px -46px;}
 .m_container {position: relative; padding-top:50px;height: 100%;width: 100%;overflow: hidden;}
 .m_aside_box {position: absolute;left: 0;top:50px; height: 100%;}
 .m_aside_nav {position: absolute; width: 200px; height: 100%;left: 0;top:0;background-color:#262d35;/* -moz-transition: width 0.2s ease-in; -o-transition: width 0.2s ease-in; -ms-transition: width 0.2s ease-in; -webkit-transition: width 0.2s ease-in; */}
@@ -45,9 +48,16 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .m_function_box {position: absolute;left: 0;top:0;padding-left: 13px; width: 257px;height: 100%;background:#fff;-webkit-box-shadow: 2px 0 8px rgba(0,0,0,.2);-moz-box-shadow: 2px 0 8px rgba(0,0,0,.2);box-shadow: 2px 0 8px rgba(0,0,0,.2);-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
 .m_fun_con {width: 244px;}
 .m_fun_con.m_br {border-bottom:1px dashed #c5cad2;}
-.m_fun_hd {position: relative;padding-left: 3px; height: 42px;}
-.m_fun_hd h4 {line-height: 42px;font-size: 12px;font-weight: bold; color:#3b485b;}
+.m_fun_hd {position: relative; height: 42px;}
+.m_fun_hd h4 { line-height: 42px;font-size: 12px;font-weight: bold; color:#3b485b;text-indent: 3px;}
 .m_fun_hd .icon22 {position: absolute; top: 10px;right: -3px;}
+.m_fun_hd.tab {height: 52px;}
+.m_fun_hd.tab .icon22 {top: 20px;}
+.m_fun_hd_tab {padding:15px 0 5px; height: 32px;font-size: 12px; -webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.m_fun_hd_tab li {float: left; height: 30px;width: 84px;border:1px solid #c2c9d5;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.m_fun_hd_tab li:last-child {border-left:0;}
+.m_fun_hd_tab a {display: block;width: 84px;line-height: 30px;text-align: center;color:#3b485b;}
+.m_fun_hd_tab .active a,.m_fun_hd_tab a:hover {background-color:#eaecf0;}
 .m_fun_detail {border:1px solid #c5cad2;}
 .m_detail_title { height: 34px; line-height: 34px; border-bottom:1px solid #c5cad2;background-color:#eaecf0;font-size: 12px;}
 .m_detail_title h4 {float:left;  line-height: 34px;text-indent: 12px;}
@@ -55,7 +65,7 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .m_fun_ctr {position: absolute;left: 100%;top: 50%;margin-top: -27px; width: 16px;height: 53px;}
 .m_fun_btn {width: 16px;height: 53px;background-position: -184px 0;}
 .m_fun_bd {padding-bottom: 5px;}
-.m_btn {display: inline-block;width: 60px; height: 32px;line-height: 32px; border:1px solid #e7eff3; font-size:14px;text-align: center;color: #666;background-color:#f0f2f7;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; -webkit-box-sizing: content-box;
+.m_btn {display: inline-block;width: 60px; height: 32px;line-height: 32px; border:1px solid #e7eff3; font-size:12px;text-align: center;color: #666;background-color:#f0f2f7;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; -webkit-box-sizing: content-box;
 -moz-box-sizing: content-box;box-sizing: content-box; vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;}
 .m_btn_confirm {border-color:#509edc;background-color:#509edc;color:#fff;}
 
@@ -115,3 +125,24 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .ct_satellite_main {width: 320px;}
 .ct_sl_select dd a {margin:0 25px 25px 0;padding:0;width: 48px;text-align:center;}
 /* end comprehensive_test.css(ct) */
+
+/* forecasting_warning.css(fw) */
+.fw_fun_bd .m_fun_detail{border:0;}
+.fw_detail_b {padding:10px 15px;font-size: 12px;}
+.fw_detail_item dt ,.fw_detail_item dd {float: left;}
+.fw_detail_item dt { width: 70px; height: 32px;line-height: 32px;text-align: left;}
+.fw_detail_item input.text {padding:5px 10px; width: 120px; height: 20px;border:1px solid #c2c9d5;}
+.fw_detail_item input.text:focus {border-color:#509edc;}
+.fw_detail_item .select_box ,.fw_detail_item .select_option {width: 140px;}
+.fw_detail_item .select_text {width: 130px;}
+.fw_tools_box {padding:5px 0; height: 22px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.fw_tools_box a {margin-right: 8px;}
+.fw_ctr_bar {padding-left: 70px;}
+.fw_ctr_bar a {margin:0 3px;}
+.fw_detail_list li {padding:10px 0;line-height: 20px;font-size: 12px;border-bottom:1px solid #c2c9d5;}
+.fw_detail_list li:last-child {border-bottom:0;}
+.fw_detail_list h4 ,.fw_detail_list span {display: block;line-height: 20px;color: #999;}
+.fw_detail_list a {color:#333;}
+.fw_more_ctr {padding:10px 0;}
+.fw_more_btn {width: 242px;border-color:#509edc;background-color:#509edc;color: #fff;}
+/* end forecasting_warning.css(fw) */
