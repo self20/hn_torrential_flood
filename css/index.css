@@ -60,6 +60,7 @@ input.text {-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-siz
 .m_fun_hd_tab .active a,.m_fun_hd_tab a:hover {background-color:#eaecf0;}
 .m_fun_detail {border:1px solid #c5cad2;}
 .m_detail_title { height: 34px; line-height: 34px; border-bottom:1px solid #c5cad2;background-color:#eaecf0;font-size: 12px;}
+.m_detail_title.m_nbr {border-bottom: 0;}
 .m_detail_title h4 {float:left;  line-height: 34px;text-indent: 12px;}
 .m_detail_title span {float: right;padding-right: 12px;color:#999;}
 .m_fun_ctr {position: absolute;left: 100%;top: 50%;margin-top: -27px; width: 16px;height: 53px;}
@@ -146,3 +147,15 @@ input.text {-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-siz
 .fw_more_ctr {padding:10px 0;}
 .fw_more_btn {width: 242px;border-color:#509edc;background-color:#509edc;color: #fff;}
 /* end forecasting_warning.css(fw) */
+
+/* basin_page.css(bp) */
+.bp_select_box {padding:13px;}
+.bp_select_box .select_box ,.bp_select_box .select_option {width: 214px;}
+.bp_select_box .select_text {width: 204px;}
+.bp_select_list {padding:10px 0;}
+.bp_select_list li {float: left;padding-left:11px; width: 110px; height: 34px;line-height: 34px;font-size: 12px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
+.bp_select_list .bp_l {width: 231px;}
+.bp_select_list .icon22 {margin:0 2px 2px 0;}
+.bp_select_list .checked .black_checkbox {background-position: -23px -23px;}
+.bp_select_list .checked .black_radio {background-position: -115px -23px;}
+/* end basin_page.css(bp) */
