@@ -13,6 +13,9 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .icon22.white_disaster {background-position: -138px 0;}
 .icon22.white_chart {background-position: -163px 0;}
 .icon22.black_checkbox {background-position: -46px -23px;}
+.icon22.black_radio {background-position: -138px -23px;}
+.icon22.black_down {background-position: -161px -23px;}
+.icon22.black_up {background-position: 0 -46px;}
 .m_container {position: relative; padding-top:50px;height: 100%;width: 100%;overflow: hidden;}
 .m_aside_box {position: absolute;left: 0;top:50px; height: 100%;}
 .m_aside_nav {position: absolute; width: 200px; height: 100%;left: 0;top:0;background-color:#262d35;/* -moz-transition: width 0.2s ease-in; -o-transition: width 0.2s ease-in; -ms-transition: width 0.2s ease-in; -webkit-transition: width 0.2s ease-in; */}
@@ -41,14 +44,17 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 
 .m_function_box {position: absolute;left: 0;top:0;padding-left: 13px; width: 257px;height: 100%;background:#fff;-webkit-box-shadow: 2px 0 8px rgba(0,0,0,.2);-moz-box-shadow: 2px 0 8px rgba(0,0,0,.2);box-shadow: 2px 0 8px rgba(0,0,0,.2);-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;}
 .m_fun_con {width: 244px;}
+.m_fun_con.m_br {border-bottom:1px dashed #c5cad2;}
 .m_fun_hd {position: relative;padding-left: 3px; height: 42px;}
 .m_fun_hd h4 {line-height: 42px;font-size: 12px;font-weight: bold; color:#3b485b;}
+.m_fun_hd .icon22 {position: absolute; top: 10px;right: -3px;}
 .m_fun_detail {border:1px solid #c5cad2;}
-.m_detail_title {height: 34px; line-height: 34px; border-bottom:1px solid #c5cad2;background-color:#eaecf0;font-size: 12px;}
-.m_detail_title h4 {line-height: 34px;text-indent: 12px;}
+.m_detail_title { height: 34px; line-height: 34px; border-bottom:1px solid #c5cad2;background-color:#eaecf0;font-size: 12px;}
+.m_detail_title h4 {float:left;  line-height: 34px;text-indent: 12px;}
+.m_detail_title span {float: right;padding-right: 12px;color:#999;}
 .m_fun_ctr {position: absolute;left: 100%;top: 50%;margin-top: -27px; width: 16px;height: 53px;}
 .m_fun_btn {width: 16px;height: 53px;background-position: -184px 0;}
-
+.m_fun_bd {padding-bottom: 5px;}
 .m_btn {display: inline-block;width: 60px; height: 32px;line-height: 32px; border:1px solid #e7eff3; font-size:14px;text-align: center;color: #666;background-color:#f0f2f7;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; -webkit-box-sizing: content-box;
 -moz-box-sizing: content-box;box-sizing: content-box; vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;}
 .m_btn_confirm {border-color:#509edc;background-color:#509edc;color:#fff;}
@@ -95,6 +101,7 @@ body{height: 100%; background-color:#fff;font-size: 14px; font-family:"Microsoft
 .ct_select_list .ct_l {width: 231px;}
 .ct_select_list .icon22 {margin:0 2px 2px 0;}
 .ct_select_list .checked .black_checkbox {background-position: -23px -23px;}
+.ct_select_list .checked .black_radio {background-position: -115px -23px;}
 .ct_rainfall_main ,.ct_export_main ,.ct_satellite_main {width: 380px;font-size: 12px;}
 .ct_show_type {margin-bottom: 5px;}
 .ct_show_type dt ,.ct_sl_select dt{float:none; width: 100%; height: 32px;line-height: 32px;color:#707070;}
